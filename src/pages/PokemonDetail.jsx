@@ -72,8 +72,8 @@ export const PokemonDetail = () => {
         </>
       ) : (
         <>
-          <div>
-            <h1>{!error ? (
+        
+          {!error ? (
               <div className="grid mt-5 justify-items-center">
                 <div className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">O</div>
                 Loading...
@@ -88,8 +88,7 @@ export const PokemonDetail = () => {
                 </div>
               </>
             )}
-            </h1>
-          </div>
+          
 
         </>
       )}
